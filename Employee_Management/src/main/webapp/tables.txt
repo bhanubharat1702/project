@@ -1,0 +1,47 @@
+create database employee;
+use employee;
+
+create table adminlogin(u varchar(50),p varchar(50));
+insert into adminlogin values('admin','admin');
+
+create table emp (id varchar(50) primary key,name varchar(50),addres varchar(50),ph varchar(50),email varchar(50),
+dept varchar(50),desg varchar(50),sal varchar(50),dob varchar(50),doj varchar(50),gender varchar(50),
+u varchar(50),p varchar(50),pho varchar(50),
+ltc varchar(100),med varchar(100),adh varchar(100),
+bankac varchar(100),ifsc varchar(100)
+);
+
+create table empedn (id varchar(50),ed varchar(50),year varchar(50),ins_uni varchar(50),grade varchar(50));
+
+
+create table empcert (id varchar(50) ,cer varchar(50),des varchar(50),year varchar(50),ins_uni varchar(50),grade varchar(50));
+
+create table empskll (id varchar(50) , compname varchar(50),ph varchar(50),email varchar(50),adr varchar(50),contctper varchar(50),desg varchar(50),prevpaypackg varchar(50),fromdt varchar(50),todt varchar(50));
+
+create table lapp (id varchar(50),doa varchar(50),lfrom varchar(100),lto varchar(100),nod varchar(10),tleave varchar(10),status varchar(100));
+
+
+create table pslip (id varchar(50) primary key,name varchar(50),wrkingdays varchar(50),wrkeddays varchar(50),sal varchar(50),hra varchar(50),da varchar(50),netsal varchar(50),dedns varchar(50),takhome varchar(50),month varchar(50),year varchar(50));
+
+
+
+
+
+create table lmaster (id varchar(50) primary key,tleaves varchar(50),lavailed varchar(50),
+el varchar(10),ml varchar(10),cl varchar(10),pl varchar(10));
+
+
+
+
+create table lapp (id varchar(50),doa varchar(50),nod varchar(10),tleave varchar(10),status varchar(100));
+
+
+create table attlog (id varchar(50),dat varchar(50),litime varchar(10),lotime varchar(10));
+create table admin (username varchar(50),password varchar(50));
+insert into admin values('a','a123');
+
+
+create table reimburse (reimbursetype varchar(100),empid varchar(100),empname varchar(100),reqid varchar(100), reqdate varchar(100),emid varchar(100),billphoto varchar(100),status varchar(100));
+
+
+create table bills (empid varchar(100),name varchar(100),acno varchar(100),ifscode varchar(100),amt varchar(100));

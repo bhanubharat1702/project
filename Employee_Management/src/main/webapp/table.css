@@ -1,0 +1,45 @@
+@charset "utf-8";
+/* CSS Document */
+
+td{
+
+	font-size:14px;
+	background-color:#D5EFF7;
+	color:#333;
+	text-align:center;
+	
+	 
+	
+}
+tr
+{
+	font-size:14px;
+	font-weight:bold;
+	color:#333;
+	text-align:center;
+	background-color:#063;
+
+	
+	
+	
+}
+.one 
+{
+	font-size:14px;
+	font-weight:bold;
+	color:#fff;
+	text-align:center;
+	background-color:#617EE7;
+
+	
+	
+	
+}
+table
+{
+	
+	width:100%;
+	text-align:center;
+	border:1px solid #CDEDF8;
+	
+}
